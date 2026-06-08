@@ -1,4 +1,4 @@
-package adapter
+package main
 
 import "fmt"
 
@@ -33,17 +33,17 @@ func (p *RazorpayPaymentGatewayAdapter) ProcessPayment(amount float64){
 }
 
 
-// func main()  {
+func main()  {
 
-// 	var gateway adapter.PaymentGateway
+	var gateway PaymentGateway
 
-// 	gateway = &adapter.RazorpayPaymentGatewayAdapter{
-// 		Sdk: &adapter.RazorpayApi{},
-// 	}
+	gateway = &RazorpayPaymentGatewayAdapter{
+		Sdk: &RazorpayApi{},
+	}
 
-// 	gateway.ProcessPayment(1000)
+	gateway.ProcessPayment(1000)
 	
-// }
+}
 
 
 

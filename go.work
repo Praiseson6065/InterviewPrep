@@ -1,7 +1,0 @@
-go 1.22.0
-
-use (
-	./Go/SystemDesign/StructuralPattern
-	./Go/SystemDesign/CreationalPattern
-	./Go/cab-booking
-)

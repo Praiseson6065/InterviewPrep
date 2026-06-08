@@ -55,12 +55,12 @@ func (ps *PaymentService) MakePayment(
 	return gateway.ProcessPayment(amount)
 }
 
-// func main() {
+func main() {
 
-// 	service := &PaymentService{}
+	service := &PaymentService{}
 
-// 	service.MakePayment(UPIGateway, 1000)
-// 	service.MakePayment(CardGateway, 23000)
+	service.MakePayment(UPIGateway, 1000)
+	service.MakePayment(CardGateway, 23000)
 	
-// }
+}
 
